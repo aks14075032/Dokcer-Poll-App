@@ -5,6 +5,7 @@ import socket
 import random
 import json
 import logging
+import time 
 
 option_a = os.getenv('OPTION_A', "Cats")
 option_b = os.getenv('OPTION_B', "Dogs")
@@ -49,3 +50,5 @@ def hello():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80, debug=True, threaded=True)
+
+
